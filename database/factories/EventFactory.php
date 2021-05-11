@@ -10,6 +10,6 @@ $factory->define(Event::class, function (Faker $faker) {
     return [
         'name' => $faker->paragraph($nbSentences = 1, $variableNbSentences = true),
         'content' => $faker->text($maxNbChars = rand(2000, 2500)),
-        'date' => $faker->dateTimeBetween($startDate = '2019-09-01', $endDate = '2020-06-20'),
+        'date' => $faker->dateTimeBetween($startDate = '2021-01-01', $endDate = '2021-06-20'),
     ];
 });
